@@ -1,0 +1,22 @@
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+a:hover {
+    animation: gradient-animation 5s ease infinite;
+    background-size: 200% 200%;
+    background-position: 100% 50%;
+}
+/* This class will apply the gradient to the border */
+.hover\:border-gradient {
+    border-width: 2px; /* or any border thickness */
+    border-image: linear-gradient(to right, #FF7F50, #FF4500) 1; /* Change the gradient colors as desired */
+}
